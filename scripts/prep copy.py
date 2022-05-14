@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 import os
 import re
 
 def remove_tanakh():
-    os.remove('../output/tanakh.txt')
+    os.remove('../output/tanakh_transliterated.txt')
 
 def merge_tanakh():
     filenames = [
@@ -58,14 +57,10 @@ def merge_tanakh():
 def clean_tanakh():
     with open ('../output/tanakh.txt', 'r' ) as f:
         content = f.read()
-        content_new = content
-        #content_new = re.sub('(x{4}.*)', r'', content, flags = re.M) # Remove header blocks; all lines beginning with xxxx
-        # content_new = re.sub('(\[[a-z0-9]\])', r'', content_new, flags = re.M) # 
-        # content_new = re.sub('([0-9:\s])', r'', content_new, flags = re.M) # Remove all numerals, colons and spaces
-        content_new = re.sub(u'([׃])', u'', content_new, flags = re.M) # Remove all "Hebrew Periods" that terminate sentences
-        # content_new = re.sub(u'([ּ])', r'', content_new, flags = re.M) # Remove all Hebrew dagesh marks
-        # content_new = re.sub(u'([ְֱֲֳִֵֶַָֹֻ])', r'', content_new, flags = re.M) # Remove all Hebrew vowels
-        content_new = re.sub(u'([‎֖֮֓֔֕֗֙֨‎֛֚֙֡֟֠֜֞׀֥֣֤֧֦֪֢֭֨֩֝֫֬֘])', u'', content_new, flags = re.M) # Remove all Hebrew cantillation marks.
+        content_new = re.sub('(x{4}.*)', r'', content, flags = re.M) # Remove header blocks; all lines beginning with xxxx
+        content_new = re.sub('(\[[a-z0-9]\])', r'', content_new, flags = re.M) # 
+        content_new = re.sub('([0-9:\s])', r'', content_new, flags = re.M) # Remove all numerals, colons and spaces
+        content_new = re.sub('([׃])', r'', content_new, flags = re.M) # Remove all "Hebrew Periods" that terminate sentences
 
     with open ('../output/tanakh.txt', 'w' ) as outfile:
         outfile.write(content_new)
