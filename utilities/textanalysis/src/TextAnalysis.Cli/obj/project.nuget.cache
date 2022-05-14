@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "HmgLTmpbiByfHgAbPe3mwJErTnaaID4Ovq5qOdJq8QsmsqT/XgrCba8p5IIVhD5k0M7pD+tGnPyH2STta5UOEw==",
+  "success": true,
+  "projectFilePath": "/Users/adam1.cole/Documents/GitHub/bible-text/utilities/textanalysis/src/TextAnalysis.Cli/TextAnalysis.Cli.csproj",
+  "expectedPackageFiles": [
+    "/Users/adam1.cole/.nuget/packages/autofac/6.2.0/autofac.6.2.0.nupkg.sha512",
+    "/Users/adam1.cole/.nuget/packages/microsoft.csharp/4.4.1/microsoft.csharp.4.4.1.nupkg.sha512",
+    "/Users/adam1.cole/.nuget/packages/system.commandline/2.0.0-beta1.21308.1/system.commandline.2.0.0-beta1.21308.1.nupkg.sha512",
+    "/Users/adam1.cole/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "/Users/adam1.cole/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

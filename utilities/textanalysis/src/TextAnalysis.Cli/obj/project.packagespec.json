@@ -1,0 +1,59 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/adam1.cole/Documents/GitHub/bible-text/utilities/textanalysis/src/TextAnalysis.Cli/TextAnalysis.Cli.csproj",
+    "projectName": "TextAnalysis.Cli",
+    "projectPath": "/Users/adam1.cole/Documents/GitHub/bible-text/utilities/textanalysis/src/TextAnalysis.Cli/TextAnalysis.Cli.csproj",
+    "outputPath": "/Users/adam1.cole/Documents/GitHub/bible-text/utilities/textanalysis/src/TextAnalysis.Cli/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "net50"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp5.0": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp5.0": {
+      "dependencies": {
+        "Autofac": {
+          "target": "Package",
+          "version": "[6.2.0, )"
+        },
+        "System.CommandLine": {
+          "target": "Package",
+          "version": "[2.0.0-beta1.21308.1, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+    }
+  }
+}
